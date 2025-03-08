@@ -1,0 +1,8 @@
+minSofar = float('inf')
+maxprofit = 0
+stocks = [215,265,250,200,240,260,230]
+for i in stocks:
+    minSofar = min(minSofar,i)
+    maxprofit = max(maxprofit,i - minSofar)
+print(maxprofit)
+    
